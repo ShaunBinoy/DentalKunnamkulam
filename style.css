@@ -45,6 +45,7 @@ nav {
 }
 /* Button styling */
 .button-primary {
+  text-decoration: none;
   background-color: #8cc43c; /* Apply the primary color */
   color: white; /* White text for contrast */
   border: none;
