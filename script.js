@@ -42,3 +42,38 @@ document.addEventListener('DOMContentLoaded', function () {
   }, false);
 });
 
+const submitBtn=document.getElementById('submit')
+
+submitBtn.addEventListener('click',(event)=>{
+  event.preventDefault()
+
+  const formData={
+    "data": {
+        "Name": document.getElementById("name").value,
+        "Email": document.getElementById("email").value,
+        "Date": document.getElementById("date").value,
+        "Service": document.getElementById("service").value,
+        "PhoneNumber": document.getElementById("phone").value,
+        "Message": document.getElementById("message").value
+      }
+  }
+
+  fetch('https://sheetdb.io/api/v1/9gl0rk8kyti2k',{
+    method:"Post",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body:JSON.stringify(formData)
+
+  })
+  .then((data)=>data.json())
+  .then((data)=>{
+    if(data.created){
+      alert("Your appointment has been scheduled!")
+      document.getElementById('appointmentForm').reset()
+    }
+  })
+  .catch(error=>{
+    alert('Error while confirming appointment,Please contact us directly')
+  })
+})
