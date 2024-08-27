@@ -45,7 +45,6 @@ nav {
 }
 /* Button styling */
 .button-primary {
-  text-decoration: none;
   background-color: #8cc43c; /* Apply the primary color */
   color: white; /* White text for contrast */
   border: none;
@@ -130,17 +129,18 @@ nav {
     margin-top: 20px;
   }
 }
-@keyframes beat {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-}
 
-.beating-heart {
-  animation: beat 1s infinite;
+#navbarToggler i,
+#dropdownIcon {
+  width: 24px; 
+  height: 24px; 
+  display: inline-flex; 
+  justify-content: center; 
+  align-items: center; 
 }
 
 
+#navbarToggler i,
+#dropdownIcon {
+  font-size: 20px; 
+}
