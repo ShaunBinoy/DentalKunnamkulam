@@ -45,7 +45,6 @@ nav {
 }
 /* Button styling */
 .button-primary {
-  text-decoration: none;
   background-color: #8cc43c; /* Apply the primary color */
   color: white; /* White text for contrast */
   border: none;
@@ -131,4 +130,17 @@ nav {
   }
 }
 
+#navbarToggler i,
+#dropdownIcon {
+  width: 24px; 
+  height: 24px; 
+  display: inline-flex; 
+  justify-content: center; 
+  align-items: center; 
+}
 
+
+#navbarToggler i,
+#dropdownIcon {
+  font-size: 20px; 
+}
