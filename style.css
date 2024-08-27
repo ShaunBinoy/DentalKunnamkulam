@@ -4,7 +4,7 @@
 }
 
 .fixed-header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -25,7 +25,7 @@ nav {
 /* Font for top header (phone, email, address) */
 .top-header {
   font-family: "Poppins", sans-serif;
-  font-size: 10px;
+  font-size: 12px;
   background-color: #f8f9fa;
   padding: 0.5rem 0;
 }
@@ -63,6 +63,7 @@ nav {
   cursor: pointer;
   border-radius: 5px; /* Optional rounded corners */
   transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 
 .button-primary:hover {
@@ -136,24 +137,27 @@ nav {
     order: 2;
     margin-top: 20px;
   }
+  .top-header {
+    font-size: 8px;
+  }
 }
 
 #navbarToggler i,
 #dropdownIcon {
-  width: 24px; 
-  height: 24px; 
-  display: inline-flex; 
-  justify-content: center; 
-  align-items: center; 
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
-
 
 #navbarToggler i,
 #dropdownIcon {
-  font-size: 20px; 
+  font-size: 20px;
 }
 @keyframes beat {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {
