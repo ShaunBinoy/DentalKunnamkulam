@@ -1,4 +1,11 @@
 // Change the navbar toggler icon to an "X" on click
+document.addEventListener('DOMContentLoaded', function() {
+  AOS.init({
+    duration: 1000,
+    once: true,
+    offset: 100
+  });
+});
 const navbarToggler = document.getElementById("navbarToggler");
 navbarToggler.addEventListener("click", function () {
   const togglerIcon = navbarToggler.querySelector("i");
@@ -21,3 +28,17 @@ function showDownIcon() {
   dropdownIcon.classList.remove("fa-chevron-up");
   dropdownIcon.classList.add("fa-chevron-down");
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.getElementById('appointmentForm');
+
+  form.addEventListener('submit', function (event) {
+    if (!form.checkValidity()) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+
+    form.classList.add('was-validated');
+  }, false);
+});
+
