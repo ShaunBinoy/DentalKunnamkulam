@@ -3,6 +3,14 @@
   --primary-color: #8cc43c;
 }
 
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Make sure it's on top of other content */
+  background-color: #fff; /* Background color to avoid transparency */
+}
 nav {
   background: #ebebeb;
 }
