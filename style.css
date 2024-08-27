@@ -144,3 +144,15 @@ nav {
 #dropdownIcon {
   font-size: 20px; 
 }
+@keyframes beat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.beating-heart {
+  animation: beat 1s infinite;
+}
