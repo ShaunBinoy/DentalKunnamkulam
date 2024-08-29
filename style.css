@@ -2,7 +2,10 @@
 :root {
   --primary-color: #8cc43c;
 }
-
+.normal {
+  text-decoration: none;
+  color: black;
+}
 .fixed-header {
   position: sticky;
   top: 0;
