@@ -58,7 +58,7 @@ submitBtn.addEventListener('click',(event)=>{
       }
   }
 
-  fetch('https://sheetdb.io/api/v1/9gl0rk8kyti2k',{
+  fetch('https://sheetdb.io/api/v1/ovbxjani61f31',{
     method:"Post",
     headers: {
       "Content-Type": "application/json"
