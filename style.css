@@ -196,4 +196,8 @@ nav {
     bottom: 15px;
     right: 15px;
   }
+  .bio {
+    background-color: #ececec;
+    border-radius: 17px;
+  }
 }
